@@ -1,8 +1,6 @@
 const AWS = require('aws-sdk');
 const S3PathGenerator = require('s3-path-generator');
 const uuidv1 = require('uuid/v1');
-const { retryable } = require('async');
-const { MoleculerError } = require('moleculer');
 const { MongoClient } = require('mongodb');
 
 module.exports = {

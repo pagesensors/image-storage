@@ -1,5 +1,4 @@
 const { ServiceBroker } = require("moleculer");
-const { ValidationError } = require("moleculer").Errors;
 const { MongoClient } = require('mongodb');
 
 /* 
@@ -71,8 +70,6 @@ describe("Test 'image-storage' service", () => {
                 width: 800,
             });
             expect(list800a).toEqual([]);
-
         });
-
     });
 });

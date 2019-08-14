@@ -1,49 +1,47 @@
 {
-  "name": "page-storage",
-  "version": "1.0.0",
-  "description": "Page Storage microservice",
-  "scripts": {
-    "dev": "moleculer-runner --repl --hot src/index.js",
-    "start": "moleculer-runner src/index.js",
-    "ci": "jest --watchAll",
-    "test": "jest --coverage",
-    "lint": "eslint src test"
-  },
-  "keywords": [
-    "microservices",
-    "moleculer"
-  ],
-  "author": "",
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "jest": "^23.3.0",
-    "jest-cli": "^23.3.0",
-    "moleculer-repl": "^0.5.0"
-  },
-  "dependencies": {
-    "async": "^3.1.0",
-    "aws-sdk": "^2.506.0",
-    "moleculer": "^0.13.0",
-    "mongodb": "^3.3.0-beta2",
-    "nats": "^1.0.0",
-    "s3-path-generator": "https://git@github.com/pagesensors/s3-path-generator.git",
-    "uuid": "^3.3.2"
-  },
-  "engines": {
-    "node": ">= 8.x.x"
-  },
-  "jest": {
-    "coverageDirectory": "../coverage",
-    "testEnvironment": "node",
-    "rootDir": "./services",
-    "roots": [
-      "../test"
-    ]
-  }
+    "name": "image-storage",
+    "version": "1.0.0",
+    "description": "Image Storage microservice",
+    "scripts": {
+        "dev": "moleculer-runner --repl --hot src/index.js",
+        "start": "moleculer-runner src/index.js",
+        "ci": "jest --watchAll",
+        "test": "jest --coverage",
+        "lint": "eslint src test"
+    },
+    "keywords": [
+        "microservices",
+        "moleculer"
+    ],
+    "author": "",
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "jest": "^23.3.0",
+        "jest-cli": "^23.3.0",
+        "moleculer-repl": "^0.5.0"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.506.0",
+        "moleculer": "^0.13.0",
+        "mongodb": "^3.3.0-beta2",
+        "s3-path-generator": "https://git@github.com/pagesensors/s3-path-generator.git",
+        "uuid": "^3.3.2"
+    },
+    "engines": {
+        "node": ">= 8.x.x"
+    },
+    "jest": {
+        "coverageDirectory": "../coverage",
+        "testEnvironment": "node",
+        "rootDir": "./services",
+        "roots": [
+            "../test"
+        ]
+    }
 }
