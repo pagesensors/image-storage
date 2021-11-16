@@ -27,7 +27,7 @@
         "moleculer-repl": "^0.5.0"
     },
     "dependencies": {
-        "aws-sdk": "^2.506.0",
+        "aws-sdk": "^2.814.0",
         "moleculer": "^0.13.0",
         "mongodb": "^3.3.0-beta2",
         "s3-path-generator": "https://git@github.com/pagesensors/s3-path-generator.git",
